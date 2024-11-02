@@ -9,7 +9,7 @@ SOLID原則のD。プログラムの重要な部分が、重要でない部分�
 
 ```sample2.php```のようなテクニック。DIを用いて、プログラムの重要部分を担うクラスが、DBやWebフレームワークなどを用いるクラスに依存しないように設計し、DIPを守る。
 
-これを  
+これ（```sample1.php```）を  
 ![sample1.php](https://github.com/superneko160/DIP/blob/main/images/sample1.drawio.svg)
 
 こうしたい  
@@ -18,4 +18,6 @@ SOLID原則のD。プログラムの重要な部分が、重要でない部分�
 そのためにあいだにインターフェースを介すとよい  
 ![sample2-2.php](https://github.com/superneko160/DIP/blob/main/images/sample2-2.drawio.svg)
 
-このテクニックが**DI**
+このテクニックが**DI**  
+AとBインターフェースを同じ括りで考えたとき、```[A + Bインターフェース] <- [B]```のように矢印の方向が逆転しているので依存性逆転の原則と呼ぶ......らしい。
+
