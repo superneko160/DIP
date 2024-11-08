@@ -9,7 +9,7 @@
  */
 
 interface IUserRepository {
-    public function checkAvailableUserForPurchase(string $userId): bool;
+    function checkAvailableUserForPurchase(string $userId): bool;
 }
 
 class Cart {
